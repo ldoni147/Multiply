@@ -30,8 +30,12 @@ class ViewController: UIViewController {
         
         
         //Stretch 1 (check Display a Number Hackwich) - Lainey
+        number2UITextField.resignFirstResponder()
+        number1UITextField.resignFirstResponder()
         
-    }
+        
+        
+        }
     
 }
 
