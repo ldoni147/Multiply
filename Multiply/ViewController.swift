@@ -24,10 +24,24 @@ class ViewController: UIViewController {
     
     @IBAction func equalWhenPressed(_ sender: UIButton) {
         //MVP - Kennedy
+        var answer = Int(number1UITextField.text!)! * Int(number2UITextField.text!)!
         
+        answerLable.text = "\(answer)"
+        
+    
         
         //Stretch 2 & 3
         
+        if answer == 64 {
+            answerUIImageView.image = UIImage (named: "peach")
+        } else {
+            if (answer % 2 == 0) {
+                answerUIImageView.image = UIImage (named: "dababy" )
+                
+            } else  {
+                answerUIImageView.image = UIImage (named: "eye")
+            }
+        }
         
         //Stretch 1 (check Display a Number Hackwich) - Lainey
         number2UITextField.resignFirstResponder()
